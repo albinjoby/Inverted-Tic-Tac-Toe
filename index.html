@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverted Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Inverted Tic Tac Toe</h1>
+            <button class="help-btn" id="helpBtn">?</button>
+        </header>
+
+        <main>
+            <div class="game-container">
+                <h2>Inverted Tic Tac Toe</h2>
+                <div class="game-info">
+                    <span class="player-info">You are O • AI is X</span>
+                    <span class="turn-indicator" id="turnIndicator">Your turn</span>
+                </div>
+
+                <div class="game-board" id="gameBoard">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+
+                <div class="game-controls">
+                    <!-- <p>If you win, tag me @albinjoby in social media and post the winning strategy.</p> -->
+
+                    <div class="start-options">
+                        <label>
+                            <input type="radio" name="startOption" value="random" checked>
+                            Random start
+                        </label>
+                        <label>
+                            <input type="radio" name="startOption" value="you">
+                            You start
+                        </label>
+                        <label>
+                            <input type="radio" name="startOption" value="ai">
+                            AI starts
+                        </label>
+                    </div>
+
+                    <button class="new-game-btn" id="newGameBtn">New game</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="game-over-modal" id="gameOverModal">
+        <div class="modal-content">
+            <h3 id="gameResult"></h3>
+            <p id="gameMessage"></p>
+            <button class="play-again-btn" id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+    <div class="help-modal" id="helpModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>How to Play</h3>
+                <button class="close-btn" id="closeHelpBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>🎯 Objective:</strong> This is an <em>inverted</em> Tic Tac Toe game!</p>
+                <p><strong>🤖 The AI is trying to lose</strong> - it will deliberately make bad moves to avoid winning.
+                </p>
+                <p><strong>🎮 Your Challenge:</strong> Can you force the AI to accidentally win?</p>
+                <hr>
+                <p><strong>🎲 How it works:</strong></p>
+                <ul>
+                    <li>You are <strong>O</strong>, the AI is <strong>X</strong></li>
+                    <li>Click any cell to make your move</li>
+                    <li>The AI will try its best to <em>avoid</em> winning</li>
+                    <li>Try to create situations where the AI has no choice but to win!</li>
+                </ul>
+                <hr>
+                <p><strong>🏆 Win Condition:</strong> If you manage to make the AI win, you've beaten the challenge!
+                    Share your winning strategy with @albinjoby on social media.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
