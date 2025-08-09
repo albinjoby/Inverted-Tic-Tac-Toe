@@ -35,10 +35,6 @@ For Software:
 - Responsive Web Design
 - Local Storage for game state
 
-For Hardware:
-
-- None
-
 ### Implementation
 
 For Software:
@@ -64,7 +60,7 @@ python -m http.server 8000
 
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots
 
 ![Game Screen](https://github.com/user-attachments/assets/1318f1a2-cbe1-4efa-ba01-d672c68a8ad7)
 _Main game interface showing the inverted tic-tac-toe board_
@@ -92,12 +88,6 @@ flowchart TD
   BoardFull -- No --> PlayerTurn
   ```
 
-For Hardware:
-
-# Schematic & Circuit
-
-None
-
 # Build Photos
 
 <!-- ![Components](Add photo of your components here)
@@ -113,7 +103,7 @@ _Explain the build steps_ -->
 # Video
 
 https://github.com/user-attachments/assets/0ed2203c-b2ed-4531-8b83-ec08d0ac7422
-_Explain what the video demonstrates_
+_Explains what the video demonstrates_
 
 # Additional Demos
 
