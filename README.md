@@ -4,13 +4,12 @@
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Bug Hunters
 
 ### Team Members
 
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Albin K Joby - Sahrdaya Collage of Engineering and Technology
+- Member 2: Abel M B - Sahrdaya Collage of Engineering and Technology
 
 ### Project Description
 
@@ -38,9 +37,7 @@ For Software:
 
 For Hardware:
 
-- [List main components]
-- [List specifications]
-- [List tools required]
+- None
 
 ### Implementation
 
@@ -69,57 +66,63 @@ For Software:
 
 # Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-_Add caption explaining what this shows_
+![Game Screen](https://github.com/user-attachments/assets/1318f1a2-cbe1-4efa-ba01-d672c68a8ad7)
+_Main game interface showing the inverted tic-tac-toe board_
 
-![Screenshot2](Add screenshot 2 here with proper name)
-_Add caption explaining what this shows_
+![Help Screen](https://github.com/user-attachments/assets/fc058b62-1e34-444f-8f02-8a3008984422)
+_Help modal explaining the game rules and how to play_
 
-![Screenshot3](Add screenshot 3 here with proper name)
-_Add caption explaining what this shows_
+![Game End Screen](https://github.com/user-attachments/assets/3682f2cc-15d9-4955-ab48-21fa86f0f457)
+_Game over modal showing the result_
 
 # Diagrams
 
-![Workflow](Add your workflow/architecture diagram here)
-_Add caption explaining your workflow_
+```mermaid
+flowchart TD
+  Start[Start Game] --> Init[Initialize 3x3 Board]
+  Init --> PlayerTurn[Player's Turn]
+  PlayerTurn --> CheckPlayerLose{Does player have 3 in a row?}
+  CheckPlayerLose -- Yes --> PlayerLose[Player loses → Game Over]
+  CheckPlayerLose -- No --> AITurn[AI's Turn]
+  AITurn --> AIChoose[AI selects move to avoid winning]
+  AIChoose --> CheckAILose{Does AI have 3 in a row?}
+  CheckAILose -- Yes --> AILose[AI loses → Player wins]
+  CheckAILose -- No --> BoardFull{Is board full?}
+  BoardFull -- Yes --> Draw[Draw → No one loses]
+  BoardFull -- No --> PlayerTurn
+  ```
 
 For Hardware:
 
 # Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
-_Add caption explaining connections_
-
-![Schematic](Add your schematic diagram here)
-_Add caption explaining the schematic_
+None
 
 # Build Photos
 
-![Components](Add photo of your components here)
+<!-- ![Components](Add photo of your components here)
 _List out all components shown_
 
 ![Build](Add photos of build process here)
-_Explain the build steps_
+_Explain the build steps_ -->
 
-![Final](Add photo of final product here)
-_Explain the final build_
+![Final](https://github.com/user-attachments/assets/1318f1a2-cbe1-4efa-ba01-d672c68a8ad7)
 
 ### Project Demo
 
 # Video
 
-[Add your demo video link here]
+https://github.com/user-attachments/assets/0ed2203c-b2ed-4531-8b83-ec08d0ac7422
 _Explain what the video demonstrates_
 
 # Additional Demos
 
-[Add any extra demo materials/links]
+- None
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Albin K Joby: MiniMax and Alpha Beta Pruning
+- Abel M B: Html, Css and Js
 
 ---
 
